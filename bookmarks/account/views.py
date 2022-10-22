@@ -19,5 +19,5 @@ def user_login(request):
         else:
             return HttpResponse('Invalid login')
  else:
-     form = LoginForm()
-     return render(request, 'account/login.html', {'form': form})
+    form = LoginForm()
+ return render(request, 'account/login.html', {'form': form})
