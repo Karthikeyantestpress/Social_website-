@@ -4,4 +4,7 @@
  <h1>Dashboard</h1>
  <p> Hi {{ user.get_username }}</p>
  <p>Welcome to your dashboard.</p>
+ <p>You can <a href="{% url "edit" %}">edit
+    your profile</a> or <a href="{% url "password_change" %}">change your
+    password</a>.</p>
 {% endblock %}
