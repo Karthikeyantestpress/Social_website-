@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-i5j-=rpgie!q14ra-s7v-1bmy1(q-$3_r(ab5cp_q$ok93uo06
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [['mysite.com', 'localhost', '127.0.0.1']]
+ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -33,6 +33,7 @@ ALLOWED_HOSTS = [['mysite.com', 'localhost', '127.0.0.1']]
 INSTALLED_APPS = [
     'account.apps.AccountConfig',
     'social_django',
+    'django_extensions',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
