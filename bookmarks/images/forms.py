@@ -29,6 +29,7 @@ class ImageCreateForm(forms.ModelForm):
     name = slugify(image.title)
     extension = image_url.rsplit('.', 1)[1].lower()
     image_name = f'{name}.{extension}'
+    
     # download image from the given URL
     response = request.urlopen(image_url)
     image.image.save(image_name,
